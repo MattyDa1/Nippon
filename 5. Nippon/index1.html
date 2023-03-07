@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Velkommen til Nippon">
+    <meta name="robots" content="noindex">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Nippon</title>
+</head>
+
+<body>
+    <nav>
+        <section class="nav_width">
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </section>
+
+        <img src="img/Logo_nippon.png" alt="Nippon Logo" class="footer_img">
+
+        <ul class="nav_menu">
+            <li class="nav_item">
+                <a href="index1.html" class="nav_link">Forside</a>
+            </li>
+            <li class="nav_item">
+                <a href="måltidskasser.html" class="nav_link">Måltidskasser</a>
+            </li>
+            <li class="nav_item">
+                <a href="404.html" class="nav_link">Tilbehør</a>
+            </li>
+            <li class="nav_item">
+                <a href="404.html" class="nav_link">Kontakt</a>
+            </li>
+        </ul>
+
+        <input type="text" placeholder="Search.." class="">
+
+        <img onclick="document.getElementById('id01').style.display='block'" src="img/Bruger_ikon.png" alt="Bruger" class="footer_img">
+
+        <div id="id01" class="modal">
+
+            <form class="modal-content animate" action="/action_page.php" method="post">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                        title="Close Modal">&times;</span>
+                </div>
+
+                <div class="container">
+                    <label for="uname"><b>Brugernavn</b></label>
+                    <input type="text" placeholder="Skriv Brugernavn" name="uname" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Skriv Password" name="psw" required>
+
+                    <button type="submit" href="index1.html">Log ind</button>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> Husk mig</label>
+                </div>
+
+                <div class="container" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                        class="cancelbtn">Cancel</button>
+                    <span class="psw">Glemt <a href="404.html">password?</a></span>
+                </div>
+            </form>
+        </div>
+    </nav>
+    <main>
+        <div class="brown"></div>
+        <aside class="main_content_f">
+            <section class="main_content_f2 space_top">
+                <div class="intro_tekst">
+                    <p class="tekst_header">Hvad er Nippon?</p>
+                    <p class="brød_tekst">Nippon er et fødevareleveringsfirma, der har specialiseret sig i japansk køkken, 
+                        der bringer Japans unikke smag og kultur lige til døren. 
+                        Deres mission er at give familier en problemfri madoplevelse ved at tilbyde lette at tilberede måltider, som kan nydes af alle. 
+                        
+                        Nippon er også forpligtet til at fremme sunde spisevaner og give allergivenlige muligheder, hvilket sikrer, at alle kunder kan nyde den lækre smag fra Japan uden nogen bekymringer. 
+                        
+                        Med Nippon kan du opleve den autentiske smag af Japan i komforten af dit eget hjem, alt imens du ved, at dit helbred og velvære er deres topprioriteter.</p>
+                </div>
+                <div class="intro_img">
+                    <img src="img/tekst_f.png" alt="familie der laver mad" class="intro_img">
+                </div>    
+            </section>
+
+            <img src="img/stepguide.png" alt="step guide" class="main_content_img_f">
+
+            <section class="main_content_f2">
+                <div class="step_img">
+                    <img src="img/Step_-1.png" alt="cirkel med tal i" class="img_bcolor">
+                    <div class="centered">1</div>
+                </div>
+                <div class="step_tekst">
+                    <p class="tekst_header">Vælg dine måltidsretter</p>
+                    <p class="brød_tekst">Med Nippon har det aldrig været nemmere at vælge lækre japanske retter.
+                        Deres brugervenlige platform giver dig mulighed for nemt at vælge mellem en række lækre muligheder og tilpasse din ordre, så den passer til dine behov. 
+                        
+                        Du vil modtage liveopdateringer om prisen, når du tilføjer eller fjerner varer fra din indkøbskurv, hvilket sikrer, at du altid har kontrol over dit budget. Plus, med muligheden for at vælge antallet af personer, du bestiller til, og hyppigheden af dine leveringer, gør Nippon det nemt at få den japanske mad, du har lyst til, når som helst du ønsker det.</p>
+                </div>
+            </section>
+
+            <section class="main_content_f2">
+                <div class="step_img">
+                    <img src="img/Step_-1.png" alt="cirkel med tal i" class="img_bcolor">
+                    <div class="centered">2</div>
+                </div>
+                <div class="step_tekst">
+                    <p class="tekst_header">Betaling</p>
+                    <p class="brød_tekst">Hos Nippon er det enkelt og bekvemt at betale for din lækre japanske retter. Du kan betale for din ordre med dit kreditkort eller via populære mobile betalingsmetoder som Mobilepay og Apple Pay. Med disse sikre og brugervenlige muligheder kan du fokusere på at nyde dit måltid uden bekymringer om betaling. </p>
+                </div>
+            </section>
+
+            <section class="main_content_f2 space_bottom">
+                <div class="step_img">
+                    <img src="img/Step_-1.png" alt="cirkel med tal i" class="img_bcolor">
+                    <div class="centered">3</div>
+                </div>
+                <div class="step_tekst">
+                    <p class="tekst_header">Levering til døren</p>
+                    <p class="brød_tekst">Hos Nippon forstår vi vigtigheden af at levere frisk og lækker japansk vare lige til døren. Derfor går vi meget op i at sikre, at din ordre bliver pakket sikkert til rejsen. 
+
+                        Fra det øjeblik, dine vare er pakket, til de ankommer til din dør, er Nippons team dedikeret til at sikre, at din vare bliver leveret i perfekt stand. Så du kan slappe af ved at vide, at du får det japanske køkken af højeste kvalitet, lige når du ønsker det.</p>
+                </div>
+            </section>
+        </aside>
+        <div class="brown"></div>
+    </main>
+    <footer>
+        <section class="footer_img">
+            <img src="img/IMG_prayer_01.png" alt="prayer statue 1" class="footer_img">
+        </section>
+
+        <section class="footer_content">
+            <h3 class="footer_head">KONTAKT</h3>
+            <a href="https://goo.gl/maps/oZVs8cstrL4aXDpV7" class="footer_links">Linnésgade 18, 1361 København</a>
+            <a href="mailto:carlsberg@carlsberg.dk" class="footer_links">Mail: Nippon@maaltidskasser.dk</a>
+            <a href="tel:+4533273327" class="footer_links">Telefon: +45 36 49 02 27</a>
+            <p class="footer_links">CVR-NR.: 25 90 83 86</p>
+        </section>
+
+        <section class="footer_content">
+            <h3 class="footer_head">FØLG OS HER</h3>
+            <a href="https://www.facebook.com/search/top?q=nippon" class="footer_img"><img class="footer_icon footer_img" src="img/facebook_logo.png"
+                    alt="Link til Carlsberg Twitter profil"></a>
+            <a href="https://www.instagram.com/explore/tags/nippon/" class="footer_img"><img class="footer_icon footer_img"
+                    src="img/instagram_logo.png" alt="Link til Carlsberg Twitter profil"></a>
+            <a href="https://www.youtube.com/results?search_query=nippon" class="footer_img"><img class="footer_icon footer_img"
+                    src="img/youtube_logo.png" alt="Link til Carlsberg Instagram profil"></a>
+        </section>
+
+        <section class="footer_content">
+            <h3 class="footer_head">INFORMATION</h3>
+            <a class="footer_links" href="404.html">Privatslivpolitik</a>
+            <a class="footer_links" href="404.html">Cookiepolitik</a>
+            <a class="footer_links" href="404.html">Vilkår og betingelser</a>
+            <a class="footer_links" href="404.html">Politik for acceptabel brug</a>
+            <a class="footer_links" href="404.html">Adminestrere cookies</a>
+        </section>
+
+        <section class="footer_img">
+            <img src="img/IMG_prayer_02.png" alt="prayer statue 2" class="footer_img">
+        </section>
+    </footer>
+</body>
+
+</html>

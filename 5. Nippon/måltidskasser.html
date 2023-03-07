@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Velkommen til Nippon">
+    <meta name="robots" content="noindex">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Nippon</title>
+</head>
+
+<body>
+    <nav>
+        <section class="nav_width">
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </section>
+
+        <img src="img/Logo_nippon.png" alt="Nippon Logo" class="footer_img">
+
+        <ul class="nav_menu">
+            <li class="nav_item">
+                <a href="index1.html" class="nav_link">Forside</a>
+            </li>
+            <li class="nav_item">
+                <a href="måltidskasser.html" class="nav_link">Måltidskasser</a>
+            </li>
+            <li class="nav_item">
+                <a href="404.html" class="nav_link">Tilbehør</a>
+            </li>
+            <li class="nav_item">
+                <a href="404.html" class="nav_link">Kontakt</a>
+            </li>
+        </ul>
+
+        <input type="text" placeholder="Search.." class="">
+
+        <img onclick="document.getElementById('id01').style.display='block'" src="img/Bruger_ikon.png" alt="Bruger" class="footer_img">
+
+        <div id="id01" class="modal">
+
+            <form class="modal-content animate" action="/action_page.php" method="post">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                        title="Close Modal">&times;</span>
+                </div>
+
+                <div class="container">
+                    <label for="uname"><b>Brugernavn</b></label>
+                    <input type="text" placeholder="Skriv Brugernavn" name="uname" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Skriv Password" name="psw" required>
+
+                    <button type="submit" href="index1.html">Log ind</button>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> Husk mig</label>
+                </div>
+
+                <div class="container" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                        class="cancelbtn">Cancel</button>
+                    <span class="psw">Glemt <a href="404.html">password?</a></span>
+                </div>
+            </form>
+        </div>
+    </nav>
+
+    <main>
+        <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')"> Vis alle</button>
+            <button class="btn" onclick="filterSelection('Fisk')"> Fisk</button>
+            <button class="btn" onclick="filterSelection('Skaldyr')"> Skaldyr</button>
+            <button class="btn" onclick="filterSelection('Ko')"> Ko</button>
+            <button class="btn" onclick="filterSelection('Gris')"> Gris</button>
+            <button class="btn" onclick="filterSelection('Kylling')"> Kylling</button>
+            <button class="btn" onclick="filterSelection('Vegetar')"> Vegetar</button>
+        </div>
+
+        <aside class="måltidskasser">
+            <section class="måltidskasser_row">
+                <div class="row">
+                    <div class="column Kylling">
+                        <div class="content">
+                            <img src="img/Cards/Card_01.png" alt="Kyllinge-donburi" class="mad_m">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column Kylling">
+                        <div class="content">
+                            <img src="img/Cards/Card_02.png" alt="Pankokylling" class="mad_m">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column Kylling">
+                        <div class="content">
+                            <img src="img/Cards/Card_03.png" alt="Pepper Chicken Stir Fry" class="mad_m">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column Kylling">
+                        <div class="content">
+                            <img src="img/Cards/Card_04.png" alt="Egg Fried Rice (Gohan)" class="mad_m">
+                        </div>
+                    </div>
+                </div>    
+            </section>
+            <section class="måltidskasser_row">
+            <div class="row">
+                <div class="column Gris">
+                    <div class="content">
+                        <img src="img/Cards/Card_05.png" alt="Miso Ramen med Svinekød" class="mad_m">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column Kylling">
+                    <div class="content">
+                        <img src="img/Cards/Card_06.png" alt="Kyllingekødboller" class="mad_m">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column Kylling">
+                    <div class="content">
+                        <img src="img/Cards/Card_07.png" alt="Ramen Suppe med kylling" class="mad_m">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column Kylling">
+                    <div class="content">
+                        <img src="img/Cards/Card_08.png" alt="Kylling i karry" class="mad_m">
+                    </div>
+                </div>
+            </div>
+            </section>
+            <section class="måltidskasser_row">
+            <div class="row">
+                <div class="column Kylling">
+                    <div class="content">
+                        <img src="img/Cards/Card_09.png" alt="Katsu carry med kylling" class="mad_m">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column Fisk Vegetar Ko">
+                    <div class="content">
+                        <img src="img/Cards/Card_10.png" alt="Sushi" class="mad_m">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column Vegetar Fisk">
+                    <div class="content">
+                        <img src="img/Cards/Card_11.png" alt="Rice paper rolls" class="mad_m">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column Ko">
+                    <div class="content">
+                        <img src="img/Cards/Card_12.png" alt="forårsruller" class="mad_m">
+                    </div>
+                </div>
+            </div>
+            </section>    
+        </aside>
+    </main>
+
+    <footer>
+        <section class="footer_img">
+            <img src="img/IMG_prayer_01.png" alt="prayer statue 1" class="footer_img">
+        </section>
+
+        <section class="footer_content">
+            <h3 class="footer_head">KONTAKT</h3>
+            <a href="https://goo.gl/maps/oZVs8cstrL4aXDpV7" class="footer_links">Linnésgade 18, 1361 København</a>
+            <a href="mailto:carlsberg@carlsberg.dk" class="footer_links">Mail: Nippon@maaltidskasser.dk</a>
+            <a href="tel:+4533273327" class="footer_links">Telefon: +45 36 49 02 27</a>
+            <p class="footer_links">CVR-NR.: 25 90 83 86</p>
+        </section>
+
+        <section class="footer_content">
+            <h3 class="footer_head">FØLG OS HER</h3>
+            <a href="https://www.facebook.com/search/top?q=nippon" class="footer_img"><img class="footer_icon footer_img" src="img/facebook_logo.png"
+                    alt="Link til Carlsberg Twitter profil"></a>
+            <a href="https://www.instagram.com/explore/tags/nippon/" class="footer_img"><img class="footer_icon footer_img"
+                    src="img/instagram_logo.png" alt="Link til Carlsberg Twitter profil"></a>
+            <a href="https://www.youtube.com/results?search_query=nippon" class="footer_img"><img class="footer_icon footer_img"
+                    src="img/youtube_logo.png" alt="Link til Carlsberg Instagram profil"></a>
+        </section>
+
+        <section class="footer_content">
+            <h3 class="footer_head">INFORMATION</h3>
+            <a class="footer_links" href="404.html">Privatslivpolitik</a>
+            <a class="footer_links" href="404.html">Cookiepolitik</a>
+            <a class="footer_links" href="404.html">Vilkår og betingelser</a>
+            <a class="footer_links" href="404.html">Politik for acceptabel brug</a>
+            <a class="footer_links" href="404.html">Adminestrere cookies</a>
+        </section>
+
+        <section class="footer_img">
+            <img src="img/IMG_prayer_02.png" alt="prayer statue 2" class="footer_img">
+        </section>
+    </footer>
+</body>
+
+</html>
